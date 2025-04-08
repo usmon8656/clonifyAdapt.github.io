@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+nav .container .links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav .container .links a {
+    text-decoration: none;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+nav .container .icons, 
+nav .container .icons .icon_links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+nav .container .icons i {
+    color: #282828;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .container .imgs {
+    width: 48%;
+}
+
+.hero .container img {
+    width: 100%;
+}
+
+.hero .container .hero_info {
+    width: 48%;
+}
+
+.hero .container .hero_info h4{
+    color: #282828;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero .container .hero_info h1{
+    width: 80%;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.hero .container .hero_info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+    width: 65%;
+}
+
+.hero .container .hero_info button{
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+            /* MAIN */
+
+.section_One .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section_product .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section_product .container .card {
+    width: 30%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.123);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.section_product .container .card img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.section_product .container .card h3 {
+    font-weight: 400;
+    color: #5F6980;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+footer .container .footer_info p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+    width: 300px;
+    margin: 20px 0px;
+}
+
+footer .container .footer_info .links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .container .footer_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+footer .container .footer_links .box .link {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer .container .footer_links .box a {
+    text-decoration: none;
+    color: #5F6980;
+
+}
+
+.icon_menu {
+    display: none;
+}
+
+@media (max-width:480px){
+    nav .container {
+        padding: 10px 10px;
+    }
+
+    nav .container .links {
+        display: none;
+    }
+
+    nav .container .icons .icon_links{
+        display: none;
+    }
+
+    .icon_menu {
+        display: block;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .container .imgs {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero .container .hero_info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero .container .hero_info h4 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .hero .container .hero_info h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    .section_One .container {
+        justify-content: center;
+        margin: 10px auto;
+        gap: 40px;
+    }
+
+    .section_product .container .card {
+        width: 100%;
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .container {
+        flex-direction: column;    
+        padding: 10px 10px;
+            
+    }
+
+    footer .container .footer_info {
+        width: 100%;
+    }
+
+    footer .container .footer_info p {
+        font-size: 14px;
+    }
+
+    footer .container .footer_info .links {
+        display: none;
+    }
+
+    footer .container .footer_links {
+        width: 100%;
+    }
+}
